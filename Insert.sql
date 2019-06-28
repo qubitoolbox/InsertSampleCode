@@ -61,6 +61,9 @@ create table flight (
   constraint dlfight primary key (flight_num)
   );
   
-  
-
+  create table departure (
+  departure_date date not null, 
+  flight_number int not null, 
+  aircraft_serial_no char(5) null
+  );
 
