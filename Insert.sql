@@ -29,3 +29,18 @@ drop
 drop 
   table IF EXISTS pilot cascade;
 --drop table IF EXISTS pilot cascade;
+
+/* Create all empty tables of airline database */
+-- create a new empty table passenger
+create table customer (
+  name_ varchar(40) not null, 
+  city varchar(120) null, 
+  state_ varchar(40) null, 
+  zip char(6) null, 
+  address varchar(120), 
+  phone_num varchar(12) not null, 
+  constraint phnm_uni unique (phone_num), 
+  constraint custo_name primary key(name_)
+);
+
+
