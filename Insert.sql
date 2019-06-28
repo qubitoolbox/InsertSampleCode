@@ -67,3 +67,9 @@ create table flight (
   aircraft_serial_no char(5) null
   );
 
+create table booked_on (
+  custo_name varchar(40) not null, 
+  departuredate date not null, 
+  flight_num int not null, 
+  constraint custom_er foreign key (custo_name) references customer(name_) ON DELETE CASCADE
+);
