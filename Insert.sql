@@ -43,4 +43,14 @@ create table customer (
   constraint custo_name primary key(name_)
 );
 
+-- create a new empty table aircraft
+create table aircraft (
+  serial_num char(5) not null, 
+  -- unique,
+  model_num varchar(6) not null, 
+  constraint aircft primary key (serial_num)
+  );
+  
+  
+
 
