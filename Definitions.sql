@@ -49,4 +49,15 @@ VALUES
     'Tampa', 'FL', '66798', '701-193-2320'
   );
   
-  
+  INSERT INTO customer 
+VALUES 
+  (
+    'Claudia Stevens', '775 Main St.', 
+    'Saint Louis', 'MO', '99878', '805-303-2222'
+  );
+INSERT INTO customer 
+VALUES 
+  (
+    'Arthur Hooper', '456 Rose  St.', 
+    'Las Vegas', 'NV', '17878', '316-912-2101'
+  );
