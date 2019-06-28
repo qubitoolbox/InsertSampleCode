@@ -61,3 +61,83 @@ VALUES
     'Arthur Hooper', '456 Rose  St.', 
     'Las Vegas', 'NV', '17878', '316-912-2101'
   );
+  
+  INSERT INTO customer 
+VALUES 
+  (
+    'Sergio Ryan', '567 Spruce St.  ', 
+    'Lincoln', 'NE', '87898', '803-228-6227'
+  );
+INSERT INTO customer 
+VALUES 
+  (
+    'Julia Maverick', '678 Tulip  St.  ', 
+    'Raleigh', 'NC', '79999', '802-228-6729'
+  );
+INSERT INTO customer 
+VALUES 
+  (
+    'Brandon Gordon', 'Gordon  789 First  St.', 
+    'Miami', 'FL', '30533', '801-344-7604'
+  );
+--#BOOKED_ON
+--Customer Name  Departure_Date  Flight_Num
+--YYYY-MM-DD .
+INSERT INTO BOOKED_ON 
+VALUES 
+  ('Rose Parker', '2018-10-31', 100);
+INSERT INTO BOOKED_ON 
+VALUES 
+  ('Bryan Brown', '2018-10-31', 206);
+INSERT INTO BOOKED_ON 
+VALUES 
+  (
+    'Arthur Hooper', '2018-10-31', 334
+  );
+INSERT INTO BOOKED_ON 
+VALUES 
+  ('Sergio Ryan', '2018-10-31', 449);
+INSERT INTO BOOKED_ON 
+VALUES 
+  (
+    'Brandon Gordon', '2018-10-31', 991
+  );
+INSERT INTO BOOKED_ON 
+VALUES 
+  (
+    'Madison Parker', '2018-11-01', 991
+  );
+INSERT INTO BOOKED_ON 
+VALUES 
+  (
+    'Mark Williams', '2018-11-01', 100
+  );
+INSERT INTO BOOKED_ON 
+VALUES 
+  (
+    'Carol Phillips', '2018-11-01', 100
+  );
+INSERT INTO BOOKED_ON 
+VALUES 
+  (
+    'Justin Colano', '2018-11-01', 449
+  );
+INSERT INTO BOOKED_ON 
+VALUES 
+  (
+    'Claudia Stevens', '2018-10-31', 
+    449
+  );
+INSERT INTO BOOKED_ON 
+VALUES 
+  (
+    'Julia Maverick', '2018-11-01', 991
+  );
+INSERT INTO BOOKED_ON 
+VALUES 
+  ('John Peters', '2018-11-01', 100);
+--#PLANE_TYPE
+--Model_No  Manufacturer
+--INSERT INTO plane_type
+
+
