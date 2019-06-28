@@ -1,6 +1,5 @@
 /* Airline database SQL data definition.
 */
---Osman D MOrales 5661546
 --SET search_path = airline;
 -- if passenger table already exists, remove the table
 drop 
