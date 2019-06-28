@@ -140,4 +140,331 @@ VALUES
 --Model_No  Manufacturer
 --INSERT INTO plane_type
 
+INSERT INTO plane_type 
+VALUES 
+  ('B727', 'Boeing');
+INSERT INTO plane_type 
+VALUES 
+  ('B747', 'Boeing');
+INSERT INTO plane_type 
+VALUES 
+  ('B757', 'Boeing');
+INSERT INTO plane_type 
+VALUES 
+  ('DC9', 'MD');
+INSERT INTO plane_type 
+VALUES 
+  ('DC10', 'MD');
+INSERT INTO plane_type 
+VALUES 
+  ('A310', 'Airbus');
+INSERT INTO plane_type 
+VALUES 
+  ('A320', 'Airbus');
+INSERT INTO plane_type 
+VALUES 
+  ('A330', 'Airbus');
+INSERT INTO plane_type 
+VALUES 
+  ('A340', 'Airbus');
+--#Employee
+--Employee_no  Name  Salary
+--INSERT INTO employee VALUES  
+INSERT INTO employee 
+VALUES 
+  (1001, 'John Jones', 90000);
+INSERT INTO employee 
+VALUES 
+  (1002, 'Albert Peters', 85000);
+INSERT INTO employee 
+VALUES 
+  (1003, 'Carl Rowe', 115000);
+INSERT INTO employee 
+VALUES 
+  (1004, 'Phillips', 25000);
+INSERT INTO employee 
+VALUES 
+  (1005, 'William Gates', 50000);
+INSERT INTO employee 
+VALUES 
+  (1006, 'Robert Clark', 45000);
+INSERT INTO employee 
+VALUES 
+  (1007, 'Joseph Warnock', 50000);
+INSERT INTO employee 
+VALUES 
+  (1008, 'Lisa Stuart', 53000);
+--DEPARTURE
+--INSERT INTO departure VALUES --Departure_Date  Flight_Number  --Aircraft_serial_
+INSERT INTO aircraft 
+VALUES 
+  ('B1110', 'B727');
+INSERT INTO aircraft 
+VALUES 
+  ('B1325', 'B727');
+INSERT INTO aircraft 
+VALUES 
+  ('B1088', 'B747');
+INSERT INTO aircraft 
+VALUES 
+  ('B1419', 'B747');
+INSERT INTO aircraft 
+VALUES 
+  ('B2244', 'B757');
+INSERT INTO aircraft 
+VALUES 
+  ('B9377', 'B757');
+INSERT INTO aircraft 
+VALUES 
+  ('D2101', 'DC9');
+INSERT INTO aircraft 
+VALUES 
+  ('D2216', 'DC9');
+INSERT INTO aircraft 
+VALUES 
+  ('D2333', 'DC9');
+INSERT INTO aircraft 
+VALUES 
+  ('D2429', 'DC10');
+INSERT INTO aircraft 
+VALUES 
+  ('A2530', 'A310');
+INSERT INTO aircraft 
+VALUES 
+  ('A8055', 'A320');
+INSERT INTO departure 
+VALUES 
+  ('2018-10-31', 100, 'B1110');
+INSERT INTO departure 
+VALUES 
+  ('2018-10-31', 112, NULL);
+INSERT INTO departure 
+VALUES 
+  ('2018-10-31', 206, 'D2530');
+INSERT INTO departure 
+VALUES 
+  ('2018-10-31', 334, NULL);
+INSERT INTO departure 
+VALUES 
+  ('2018-10-31', 335, NULL);
+INSERT INTO departure 
+VALUES 
+  ('2018-10-31', 337, 'D2216');
+INSERT INTO departure 
+VALUES 
+  ('2018-10-31', 449, NULL);
+INSERT INTO departure 
+VALUES 
+  ('2018-11-01', 100, 'D2530');
+INSERT INTO departure 
+VALUES 
+  ('2018-11-01', 112, 'A8055');
+INSERT INTO departure 
+VALUES 
+  ('2018-11-01', 206, NULL);
+INSERT INTO departure 
+VALUES 
+  ('2018-11-01', 334, NULL);
+INSERT INTO departure 
+VALUES 
+  ('2018-11-01', 395, NULL);
+INSERT INTO departure 
+VALUES 
+  ('2018-11-01', 991, 'B1325');
+--PILOT
+--Employee_no  Name  License_Date  Plane_model_ can_fly
+INSERT INTO pilot 
+VALUES 
+  (
+    1001, 'John Jones', '1999-06-01', 
+    'B727'
+  );
+INSERT INTO pilot 
+VALUES 
+  (
+    1001, 'John Jones', '2000-08-14', 
+    'B747'
+  );
+INSERT INTO pilot 
+VALUES 
+  (
+    1001, 'John Jones', '2005-04-20', 
+    'DC10'
+  );
+INSERT INTO pilot 
+VALUES 
+  (
+    1002, 'Albert Peters', '2010-09-25', 
+    'DC9'
+  );
+INSERT INTO pilot 
+VALUES 
+  (
+    1002, 'Albert Peters', '2005-04-20', 
+    'A310'
+  );
+INSERT INTO pilot 
+VALUES 
+  (
+    1002, 'Albert Peters', '2003-07-17', 
+    'B757'
+  );
+INSERT INTO pilot 
+VALUES 
+  (
+    1002, 'Albert Peters', '2012-05-28', 
+    'A320'
+  );
+INSERT INTO pilot 
+VALUES 
+  (
+    1002, 'Albert Peters', '2015-12-01', 
+    'B727'
+  );
+INSERT INTO pilot 
+VALUES 
+  (
+    1003, 'Carl Rowe', '2013-01-25', 'A310'
+  );
+INSERT INTO pilot 
+VALUES 
+  (
+    1003, 'Carl Rowe', '2015-05-05', 'DC9'
+  );
+--#FLIGHT
+--Flight_num  origin  dest  dep_time  arr_time  
+--
+INSERT INTO flight 
+VALUES 
+  (100, 'SLC', 'BOS', '8:00', '17:50');
+INSERT INTO flight 
+VALUES 
+  (206, 'DFW', 'STL', '9:00', '11:40');
+INSERT INTO flight 
+VALUES 
+  (
+    334, 'ORD', 'MIA', '12:00', '14:14'
+  );
+INSERT INTO flight 
+VALUES 
+  (
+    335, 'MIA', 'ORD', '15:00', '17:14'
+  );
+INSERT INTO flight 
+VALUES 
+  (
+    336, 'ORD', 'MIA', '18:00', '20:14'
+  );
+INSERT INTO flight 
+VALUES 
+  (
+    337, 'MIA', 'ORD', '20:00', '23:53'
+  );
+INSERT INTO flight 
+VALUES 
+  (121, 'STL', 'SLC', '7:00', '9:13');
+INSERT INTO flight 
+VALUES 
+  (122, 'STL', 'YYV', '8:00', '10:20');
+INSERT INTO flight 
+VALUES 
+  (
+    330, 'JFK', 'YYV', '16:00', '18:53'
+  );
+INSERT INTO flight 
+VALUES 
+  (
+    991, 'BOS', 'ORD', '17:00', '21:30'
+  );
+INSERT INTO flight 
+VALUES 
+  (
+    394, 'DFW', 'MIA', '19:00', '23:43'
+  );
+INSERT INTO flight 
+VALUES 
+  (
+    395, 'MIA', 'DFW', '21:00', '19:29'
+  );
+INSERT INTO flight 
+VALUES 
+  (
+    449, 'CDG', 'DEN', '10:00', '16:10'
+  );
+INSERT INTO flight 
+VALUES 
+  (
+    930, 'YYV', 'DCA', '13:00', '17:10'
+  );
+INSERT INTO flight 
+VALUES 
+  (
+    931, 'DCA', 'YYV', '17:00', '18:10'
+  );
+INSERT INTO flight 
+VALUES 
+  (
+    932, 'DCA', 'YYV', '18:00', '19:10'
+  );
+INSERT INTO flight 
+VALUES 
+  (
+    112, 'DCA', 'DEN', '14:00', '17:50'
+  );
+--#ASSIGNED TO
+--Employee_no  dep_date  flight_num
+INSERT INTO assigned_to 
+VALUES 
+  (1001, '2018-10-31', 100);
+INSERT INTO assigned_to 
+VALUES 
+  (1003, '2018-10-31', 100);
+INSERT INTO assigned_to 
+VALUES 
+  (1004, '2018-10-31', 100);
+INSERT INTO assigned_to 
+VALUES 
+  (1002, '2018-10-31', 206);
+INSERT INTO assigned_to 
+VALUES 
+  (1007, '2018-10-31', 206);
+INSERT INTO assigned_to 
+VALUES 
+  (1003, '2018-10-31', 337);
+INSERT INTO assigned_to 
+VALUES 
+  (1004, '2018-10-31', 337);
+INSERT INTO assigned_to 
+VALUES 
+  (1005, '2018-10-31', 337);
+INSERT INTO assigned_to 
+VALUES 
+  (1006, '2018-10-31', 337);
+INSERT INTO assigned_to 
+VALUES 
+  (1001, '2018-11-01', 100);
+INSERT INTO assigned_to 
+VALUES 
+  (1005, '2018-11-01', 100);
+INSERT INTO assigned_to 
+VALUES 
+  (1007, '2018-11-01', 100);
+INSERT INTO assigned_to 
+VALUES 
+  (1003, '2018-11-01', 991);
+INSERT INTO assigned_to 
+VALUES 
+  (1006, '2018-11-01', 991);
+INSERT INTO assigned_to 
+VALUES 
+  (1007, '2018-11-01', 991);
+INSERT INTO assigned_to 
+VALUES 
+  (1002, '2018-11-01', 112);
+INSERT INTO assigned_to 
+VALUES 
+  (1004, '2018-11-01', 112);
+INSERT INTO assigned_to 
+VALUES 
+  (1008, '2018-11-01', 112);
 
