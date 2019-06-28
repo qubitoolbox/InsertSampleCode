@@ -73,3 +73,13 @@ create table booked_on (
   flight_num int not null, 
   constraint custom_er foreign key (custo_name) references customer(name_) ON DELETE CASCADE
 );
+
+-- create a new empty table personnel
+create table employee (
+  emp_num int not null, 
+  --primary key,
+  name_ varchar(40) null, 
+  Salary int null, 
+  constraint perkr primary key (emp_num), 
+  constraint perkun unique (emp_num)
+);
