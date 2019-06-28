@@ -83,3 +83,24 @@ create table employee (
   constraint perkr primary key (emp_num), 
   constraint perkun unique (emp_num)
 );
+
+--Employee_no  dep_date  flight_num
+create table assigned_to(
+  employee_num int not null, 
+  dep_date date not null, 
+  flight_num int not null, 
+  constraint empl_num foreign key(employee_num) references employee(emp_num) ON DELETE CASCADE
+);
+-- table pilot
+create table pilot (
+  emp_num int not null, 
+  emp_name varchar(120) null, 
+  license_date date not null, 
+  plane_model varchar(9) not null, 
+  --can_fly varchar(6),
+  constraint pilot_name foreign key (emp_num) references employee(emp_num) ON DELETE CASCADE
+);
+create table plane_Type (
+  model_num varchar(9) not null, 
+  manufacturer varchar(15) not null
+);
