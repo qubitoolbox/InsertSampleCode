@@ -51,6 +51,16 @@ create table aircraft (
   constraint aircft primary key (serial_num)
   );
   
+  -- create a new empty table flight
+create table flight (
+  flight_num int not null, 
+  origin char(3) not null, 
+  dest char(3) not null, 
+  dep_time time not null, 
+  arr_time time not null, 
+  constraint dlfight primary key (flight_num)
+  );
+  
   
 
 
